@@ -1,0 +1,104 @@
+.my-container{
+    padding:20px;
+    width:60%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.my-btn{
+    border:none;
+    padding: 10px;
+    font-weight:bold;
+    width:auto;
+      min-width:100px;
+    color:white;
+    background-color: #3473b8;
+    border-radius: 5px;
+    margin: 20px 5px;
+    box-shadow: 0 1.5px 4px rgba(0,0,0,0.24), 0 1.5px 6px rgba(0,0,0,0.12); 
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    background-color: #606D72;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 2rem;
+    color:white;
+}
+
+.avatar {
+    border: 10px solid #232323;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 1rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    color: black;
+    background-color: #E3E0EB;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.my-input{
+    width: 80%;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+}
+
+@media only screen and (max-width: 700px) {
+    .my-container{
+        width:100%;
+        padding:0px;
+  
+    }
+    .avatar{
+    border:0px; 
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    }
+    .my-input{
+        margin-top: 20px;
+    }
+  }

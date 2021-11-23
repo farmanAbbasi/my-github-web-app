@@ -1,0 +1,24 @@
+<div class="my-container">
+    <div class="grid-container-1">
+
+        <div class="left">
+            <p class="heading">Successful search history</p>
+            <div class="scroll">
+                <div class="success" *ngFor="let item of success_history;let i=index" (click)="openSearch(i)">
+                    <div>{{item}}</div>
+                    <div class="cross" (click)="deleteFromSuccessHistory(i)">x</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <p class="heading">Failed search history</p>
+            <div class="scroll">
+                <div class="fail" *ngFor="let item of fail_history;let i=index">
+                    <div>{{item}}</div>
+                    <div class="cross" (click)="deleteFromFailHistory(i)">x</div>
+
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,84 @@
+.grid-container-1{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "left right";
+    box-sizing: border-box;
+    grid-gap:5px;
+    height: auto;
+    overflow: hidden;
+    width:100%;
+    }
+    
+.left{
+    grid-area: left;
+}
+.right{
+    grid-area: right;
+  
+
+}
+.scroll{
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.my-container{
+    padding:20px;
+    width:60%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .grid-container-1{
+        display: grid;
+        grid-template-columns: 100% auto;
+        grid-template-areas: "left"
+                             "right";
+        box-sizing: border-box;
+        height: auto;
+        overflow: hidden;
+        padding: 10px 20px;
+        }
+        .my-container{
+            width:100%;
+            padding:0;
+            
+        }
+  }
+
+.success{
+    background-color: rgb(144, 238, 144);
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}  
+
+.fail{
+    background-color: #eb9d9d;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.success:hover{
+    background-color: #60e760;
+
+}
+
+.heading{
+    background: #021a32;
+    margin: 0 0 10px;
+    padding: 10px;
+    color: white;
+}
+.cross{
+    color: #e11a1a;
+    font-weight: bold;
+    cursor: pointer;
+}

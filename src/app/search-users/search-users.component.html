@@ -1,0 +1,30 @@
+<div class="my-container">
+    <div align="center">
+        <input class="my-input" type="text" placeholder="Search" [(ngModel)]="globals.search">
+        <button *ngIf="globals.fromHistory" class="my-btn" routerLink="/history">History</button>
+        <button class="my-btn" (click)="searchUser(globals.search)">Search user</button>
+    </div>
+
+    <div>
+        <div *ngIf="searched_user" class="card">
+            <div>
+                <img class="avatar" src="{{searched_user.avatar_url}}" alt="{{searched_user.name}}" />
+            </div>
+            <div class="user-info">
+                <h2>{{searched_user.name}}</h2>
+                <p>{{searched_user.bio}}</p>
+
+                <ul class="info">
+                    <li>{{searched_user.followers}}<strong>Followers</strong></li>
+                    <li>{{searched_user.following}}<strong>Following</strong></li>
+                    <li>{{searched_user.public_repos}}<strong>Repos</strong></li>
+                </ul>
+
+                <div class="repo" *ngFor="let repo of repos_array">
+                    {{repo}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

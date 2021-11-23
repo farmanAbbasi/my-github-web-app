@@ -1,0 +1,35 @@
+.my-container{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+   
+}
+  
+.card{
+   cursor: pointer;
+    width: 400px;
+    background-color: #0060aa;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.my-card{
+  background-color: #f3f7d957;
+  padding: 10px;
+  color: #ffe7e7;
+  border-radius: 5px;
+  min-width: 240px;
+  box-shadow: 0 2px 14px 0 rgb(0 0 0 / 10%);
+  transition: 0.6s;
+  font-weight: 200;
+}
+
+.my-card:hover{
+  transform: translateY(-12px);
+  transition: 0.5s;
+}
